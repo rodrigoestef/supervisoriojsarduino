@@ -12,7 +12,7 @@ const api = new express();
 
 const server = require('http').createServer(api)
 
-api.use(express.static(require('path').join(__dirname,'views')))
+api.use(express.static(require('path').join(__dirname,'/front/build')))
 api.set('views',require('path').join(__dirname,'views'))
 api.engine('html',require('ejs').renderFile)
 
