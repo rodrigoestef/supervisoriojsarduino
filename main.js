@@ -22,6 +22,7 @@ api.get('/api',async (req,res)=>{
       
     port.write('1')
     res.send('mudou')
+    
 })
 
 
