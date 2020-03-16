@@ -16,10 +16,6 @@ api.engine('html',require('ejs').renderFile)
 
 var light = 0
 
-io.on('change',socket=>{
-    light = light == 0 ? 1 : 0
-})
-
 io.on('connection',socket =>{
     socket.emit('state',light)
     console.log(socket.id)
