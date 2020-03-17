@@ -15,3 +15,5 @@ npm run install-front
 npm run build
 
 npm start
+
+acessar servidor pelo navegador
