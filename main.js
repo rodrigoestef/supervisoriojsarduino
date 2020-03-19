@@ -11,7 +11,7 @@ port.on('data', function (data) {
     console.log('Data:', data.toString('utf8'))
 })
 api.use(express.static(require('path').join(__dirname,'/front/build')))
-api.set('views',require('path').join(__dirname,'views'))
+api.set('views',require('path').join(__dirname,'/front/build'))
 api.engine('html',require('ejs').renderFile)
 
 var light = 0
@@ -32,13 +32,6 @@ io.on('connection',socket =>{
 })
 
 
-
-// api.get('/api',async (req,res)=>{  
-      
-//     port.write('1')
-//     res.send('mudou')
-    
-// })
 
 
 api.use('/',async (req,res)=>{
