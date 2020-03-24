@@ -1,5 +1,7 @@
 # supervisoriojsarduino
 
+# um exemplo simples de supervisorio blink led baseado em node
+
 pré-requisito: nodejs instalado
 
 certifique-se que o arduino esteja conectado na CON3 
